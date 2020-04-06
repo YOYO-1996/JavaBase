@@ -25,14 +25,14 @@ public class MyContainer2 {
 
         new Thread(() -> {
             System.out.println("t1---start");
+            try {
+                TimeUnit.SECONDS.sleep(1);
+            } catch (InterruptedException e) {
+                e.printStackTrace();
+            }
             for (int i = 0; i < 10; i++) {
                 container2.add(new Object());
                 System.out.println("add" + i);
-                try {
-                    TimeUnit.SECONDS.sleep(1);
-                } catch (InterruptedException e) {
-                    e.printStackTrace();
-                }
             }
             System.out.println("t1---end");
         }, "t1").start();
