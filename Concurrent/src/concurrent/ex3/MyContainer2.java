@@ -7,7 +7,7 @@ import java.util.concurrent.locks.Lock;
 import java.util.concurrent.locks.ReentrantLock;
 
 /**
- * @description:
+ * @description: 生产者消费者线程
  * @author: Tong
  * @date: 2020-03-13 22:53
  */

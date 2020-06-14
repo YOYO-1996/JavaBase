@@ -27,27 +27,28 @@ public class TestReadWriteLock {
             }
         }, "Write").start();
     }
-}
-class ReadWriteLockDemo {
-    private ReadWriteLock lock = new ReentrantReadWriteLock();
-    private int data = 2;
+    static class ReadWriteLockDemo {
+        private ReadWriteLock lock = new ReentrantReadWriteLock();
+        private int data = 2;
 
-    public void get() {
-        lock.readLock().lock();
-        try {
-            System.out.println("读操作  " + Thread.currentThread().getName() + ":" + data);
-        } finally {
-            lock.readLock().unlock();
+        public void get() {
+            lock.readLock().lock();
+            try {
+                System.out.println("读操作  " + Thread.currentThread().getName() + ":" + data);
+            } finally {
+                lock.readLock().unlock();
+            }
+        }
+
+        public void set(int data) {
+            lock.writeLock().lock();
+            try {
+                System.out.println("写操作  " + Thread.currentThread().getName() + ":" + data);
+                this.data = data;
+            } finally {
+                lock.writeLock().unlock();
+            }
         }
     }
-
-    public void set(int data) {
-        lock.writeLock().lock();
-        try {
-            System.out.println("写操作  " + Thread.currentThread().getName() + ":" + data);
-            this.data = data;
-        } finally {
-            lock.writeLock().unlock();
-        }
-    }
 }
+

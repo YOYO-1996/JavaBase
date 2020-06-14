@@ -33,8 +33,8 @@ public class ThreadLocal1 {
             }
         });
     }
+    static class Person {
+        String name = "zhangsan";
+    }
 }
 
-class Person {
-    String name = "zhangsan";
-}
