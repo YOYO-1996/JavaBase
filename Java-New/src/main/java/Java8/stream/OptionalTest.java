@@ -1,4 +1,4 @@
-package Java8.lambda.stream;
+package Java8.stream;
 
 /**
  * @description:

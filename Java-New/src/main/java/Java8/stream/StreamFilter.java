@@ -1,10 +1,9 @@
-package Java8.lambda.stream;
+package Java8.stream;
 
 import Java8.lambda.Demo;
 import org.junit.Test;
 
 import java.util.*;
-import java.util.function.Function;
 import java.util.stream.Collectors;
 import java.util.stream.Stream;
 
