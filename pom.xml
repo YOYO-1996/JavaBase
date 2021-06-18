@@ -15,7 +15,16 @@
     </properties>
 
     <modules>
-        <module>Java-New</module>
+        <module>Array</module>
+        <module>Base</module>
+        <module>Collection</module>
+        <module>Concurrent</module>
+        <module>IO</module>
         <module>Iteration</module>
+        <module>Java-New</module>
+        <module>String</module>
+        <module>Common</module>
     </modules>
+
+
 </project>

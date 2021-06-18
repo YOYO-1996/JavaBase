@@ -1,5 +1,3 @@
-package func;
-
 /**
  * @description:
  * @author: Tong
