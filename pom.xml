@@ -18,6 +18,7 @@
         <module>Array</module>
         <module>Base</module>
         <module>Collection</module>
+        <module>Common</module>
         <module>Concurrent</module>
         <module>IO</module>
         <module>Iteration</module>
