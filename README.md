@@ -1,2 +1,1 @@
-Java基础部分
-Push Test
+Java学习用例

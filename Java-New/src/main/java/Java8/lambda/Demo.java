@@ -7,7 +7,7 @@ package Java8.lambda;
  */
 public class Demo {
     String name;
-     int age;
+    int age;
     int sex;
 
     public Demo() {
